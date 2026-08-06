@@ -7,3 +7,12 @@ vbNet
 
 ' Create the Star
 Dim star As IAgStar = TryCast(root.CurrentScenario.Children.[New](AgESTKObjectType.eStar, "MyStar"), IAgStar)
+Python
+
+# Create the Star
+star = root.CurrentScenario.Children.New(AgESTKObjectType.eStar, "MyStar")
+
+MATLAB
+
+% IAgStkObjectRoot root: STK Object Model Root
+star = root.CurrentScenario.Children.New('eStar', 'MyStar');
