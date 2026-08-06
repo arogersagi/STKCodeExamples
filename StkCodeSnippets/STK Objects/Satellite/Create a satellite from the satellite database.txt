@@ -1,0 +1,48 @@
+C#
+
+// Get STK database location using Connect
+IAgExecCmdResult result = root.ExecuteCommand("GetDirectory / Database Satellite");
+string satDataDir = result[0];
+string filelocation = "\"" + Path.Combine(satDataDir, @"stkAllTLE.sd") + "\"";
+string commonname = "\"hst\"";
+
+// Import object from database using Connect
+string command = String.Format("ImportFromDB * Satellite {0} Constellation ImportedFromSatDB Propagate On CommonName {1}", filelocation, commonname);
+root.ExecuteCommand(command);
+
+vbNet
+
+' Get STK database location using Connect
+Dim result As IAgExecCmdResult = root.ExecuteCommand("GetDirectory / Database Satellite")
+Dim satDataDir As String = result(0)
+Dim filelocation As String = """" + Path.Combine(satDataDir, "stkAllTLE.sd") + """"
+Dim commonname As String = """hst"""
+
+' Import object from database using Connect
+Dim command As String = [String].Format("ImportFromDB * Satellite {0} Constellation ImportedFromSatDB Propagate On CommonName {1}", filelocation, commonname)
+root.ExecuteCommand(command)
+
+
+Python
+
+# Get STK database location using Connect
+result = root.ExecuteCommand("GetDirectory / Database Satellite")
+satDataDir = result.Item(0)
+filelocation = '"' + os.path.join(satDataDir, "stkAllTLE.sd") + '"'
+commonname = '"hst"'
+
+# Import object from database using Connect
+command = "ImportFromDB * Satellite {0} Constellation ImportedFromSatDB Propagate On CommonName {1}".format(filelocation, commonname)
+root.ExecuteCommand(command)
+
+MATLAB
+
+% Get STK database location using Connect
+result = root.ExecuteCommand('GetDirectory / Database Satellite');
+satDataDir = result.Item(0);
+filelocation = ['"' fullfile(satDataDir, 'stkAllTLE.sd') '"'];
+commonname = '"hst"';
+
+% Import object from database using Connect
+command = sprintf('ImportFromDB * Satellite %s Constellation ImportedFromSatDB Propagate On CommonName %s',filelocation,commonname);
+root.ExecuteCommand(command);

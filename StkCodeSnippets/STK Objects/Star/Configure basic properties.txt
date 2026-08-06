@@ -1,0 +1,47 @@
+C#
+
+// Units depend on current unit preferences
+star.LocationDeclination = -40.0;
+star.LocationRightAscension = 120.0; // in arcSec
+star.Magnitude = -1.0;
+star.Parallax = 0.0; // in arcSec
+star.ProperMotionDeclination = 1.5; // in arcSec
+star.ProperMotionRightAscension = -0.5; // in arcSec
+star.RadialVelocity = 0.75; // in m/s
+
+vbNet
+
+' Units depend on current unit preferences
+star.LocationDeclination = -40
+star.LocationRightAscension = 120
+' in arcSec
+star.Magnitude = -1
+star.Parallax = 0
+' in arcSec
+star.ProperMotionDeclination = 1.5
+' in arcSec
+star.ProperMotionRightAscension = -0.5
+' in arcSec
+star.RadialVelocity = 0.75
+' in m/s
+
+Python
+
+// Units depend on current unit preferences
+star.LocationDeclination = -40.0
+star.LocationRightAscension = 120.0
+star.Magnitude = -1.0
+star.Parallax = 0.0
+star.ProperMotionDeclination = 1.5
+star.ProperMotionRightAscension = -0.5
+star.RadialVelocity = 0.75
+
+MATLAB
+
+% Units depend on current unit preferences
+star.LocationDeclination = -40.0;
+star.LocationRightAscension = 120.0;
+star.Magnitude = -1.0;
+star.Parallax = 0.0;
+star.ProperMotionDeclination = 1.5;
+star.ProperMotionRightAscensi
