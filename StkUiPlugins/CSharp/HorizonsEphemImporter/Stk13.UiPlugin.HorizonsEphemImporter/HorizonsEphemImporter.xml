@@ -1,0 +1,13 @@
+<?xml version = "1.0"?>
+<AGIRegistry version = "1.0">
+  <CategoryRegistry>
+    <Category Name = "UiPlugins">
+<NETUiPlugin 
+         DisplayName="Horizons Ephemeris Importer"
+         TypeName="Stk13.UiPlugin.HorizonsEphemImporter.HorizonsEphemImporter"
+         AssemblyName="Stk13.UiPlugin.HorizonsEphemImporter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+         CodeBase="C:\ProgramData\AGI\STK_ODTK 13\Plugins\HorizonsEphemImporter">
+	  </NETUiPlugin>
+	</Category>
+  </CategoryRegistry>
+</AGIRegistry>
